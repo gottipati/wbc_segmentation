@@ -1,3 +1,4 @@
+# Importing necessary modules from keras for Convolution layers, Max Pooling, Upsampling and concatenate layer for concatenating the two layers.
 from keras.models import Model
 from keras.layers import Input
 from keras.layers import Conv2D
@@ -5,8 +6,10 @@ from keras.layers import MaxPool2D
 from keras.layers import UpSampling2D
 from keras.layers import Dropout
 from keras.layers import concatenate
+# Importing image dimensions (128 * 128) as IMG_ROWS and IMG_COLS
 from all_params import IMG_ROWS, IMG_COLS
 
+# train is a boolean parameter for training. If train is True, we have to apply drop out to our model.
 def get_model(input_shape=(IMG_ROWS, IMG_COLS, 1), train=True):
     layers = {}
     layers['inputs'] = Input(shape=input_shape, name='inputs')

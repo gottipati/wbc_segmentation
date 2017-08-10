@@ -1,12 +1,9 @@
 [//]: # (Image References)
 
 [image1]: ./images/wbc_cells.jpg "white blood cells"
-[image2]: ./SigTuple_data/Test_Data/F1BFEA74B33D.jpg "test1"
-[image3]: ./SigTuple_data/Submission_Data/F1BFEA74B33D-mask.jpg "predicted mask1"
-[image4]: ./SigTuple_data/Test_Data/D28CDF85BDA3.jpg "test2"
-[image5]: ./images/SigTuple_data/Submission_Data/D28CDF85BDA3-mask.jpg "predicted mask2"
-[image6]: ./images/SigTuple_data/Test_Data/D0F6DE661D63.jpg "test3"
-[image7]: ./images/SigTuple_data/Submission_Data/D0F6DE661D63-mask.jpg "predicted mask3"
+[image2]: ./images/SigTuple_data/Test_Data/D0F6DE661D63.jpg "test"
+[image3]: ./images/SigTuple_data/Submission_Data/D0F6DE661D63-mask.jpg "predicted_mask"
+
 # White Blood Cells Segmentation (Udacity Machine Learning Capstone)
 
 ## Project Overview
@@ -20,28 +17,23 @@ with a few WBCs thrown in here and there.
 In manual process pathologists analyze the blood sample and count the WBC (white blood cells), but this is not accurately defined the correct count and related disease, they use predefined approach to determine the health of the person. But if we use Image segmentation using deep learning supervised algorithm model, it accurately demarcates the boundary of WBC
 even when they are touching each other and identify correct count. This will improve the accuracy and speed of testing and yield better results.
 
-Developed an efficient Deep Learning model using CNN (Convolutional Neural Networks) to accurately demarcate the boundary of white blood cells in microscopic images of blood
+__Developed an efficient Deep Learning model using CNN (Convolutional Neural Networks) to accurately demarcate the boundary of white blood cells in microscopic images of blood__
 - Technologies used : Tensorflow, Keras, AWS
 
-File Structure of the project:
+## File Structure of the project:
 
-* The data set is present in SigTuple_data folder. Training data is in SigTuple_data/Train_Data, after modified extra large images in train data, the new data files set is stored in SigTuple_data/New_Train_Data, Test data is in SigTuple_data/Test_Data and predicted masks for test data is in Submission_Data folder.
-* All the parameters including epochs, img dimensions and extra parameters are all stored in all_params file
-* Model is stored in model file
-* All the preprocessing and training and predicting masks are done using Jupyter notebook named wbc_segmentation.ipynb
-* capstone_project_report file describes the project architecture and implementation details
-* wbc_segmentation.pdf and .html files for representation purpose for jupyter notebook
+* The data set is present in __SigTuple_data__ folder. Training data is in __SigTuple_data/Train_Data__, after modified extra large images in train data, the new data files set is stored in __SigTuple_data/New_Train_Data__, Test data is in __SigTuple_data/Test_Data__ and predicted masks for test data is in __Submission_Data folder__.
+* All the parameters including epochs, img dimensions and extra parameters are all stored in __all_params.py__ file
+* Model is stored in __model.py__ file
+* All the preprocessing and training and predicting masks are done using Jupyter notebook named __wbc_segmentation.ipynb__
+* __capstone_project_report.pdf__ file describes the project architecture and implementation details
+* __wbc_segmentation.pdf__ and .html files for representation purpose for jupyter notebook
 
-Please see the Jupyter notebook for complete running of the project.
+__Please see the Jupyter notebook wbc_segmentation.ipynb for instructions to running the project.
 
-Please find below the model returned predicted masks for the test set.
+Please find below images, the model returned after predicting masks for the test set.
 
-![test1][image2]
-![predicted mask1][image3]
-![test2][image4]
-![predicted mask2][image5]
-![test3][image6]
-![predicted mask3][image7]
-
+![test][image2]
+![predicted_mask][image3]
 
 The first image showing the test image with white blood cells (blue area) and red blood cells (whitearea) cells. The second image showing predicted mask with white blood cells (white area).

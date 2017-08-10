@@ -1,8 +1,6 @@
 [//]: # (Image References)
 
 [image1]: ./images/wbc_cells.jpg "white blood cells"
-[image2]: ./images/SigTuple_data/Test_Data/D0F6DE661D63.jpg "test"
-[image3]: ./images/SigTuple_data/Submission_Data/D0F6DE661D63-mask.jpg "predicted_mask"
 
 # White Blood Cells Segmentation (Udacity Machine Learning Capstone)
 
@@ -29,11 +27,4 @@ __Developed an efficient Deep Learning model using CNN (Convolutional Neural Net
 * __capstone_project_report.pdf__ file describes the project architecture and implementation details
 * __wbc_segmentation.pdf__ and .html files for representation purpose for jupyter notebook
 
-__Please see the Jupyter notebook wbc_segmentation.ipynb for instructions to running the project.
-
-Please find below images, the model returned after predicting masks for the test set.
-
-![test][image2]
-![predicted_mask][image3]
-
-The first image showing the test image with white blood cells (blue area) and red blood cells (whitearea) cells. The second image showing predicted mask with white blood cells (white area).
+__Please see the Jupyter notebook wbc_segmentation.ipynb for instructions to running the project__

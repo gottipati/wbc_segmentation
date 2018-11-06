@@ -2,7 +2,7 @@
 
 [image1]: ./images/wbc_cells.jpg "white blood cells"
 
-# White Blood Cells Segmentation (Udacity Machine Learning Capstone)
+# White Blood Cells Segmentation
 
 ## Project Overview
 White blood cells (also known as WBC or leukocytes) help our body fight infections by attacking bacteria, viruses and other germs that invade the body. A count of leukocytes can help reveal several hidden and undiagnosed diseases. In a manual microscopic review of blood samples, pathologists minutely examine the count and morphology (i.e. size and shape) of white blood cells.
